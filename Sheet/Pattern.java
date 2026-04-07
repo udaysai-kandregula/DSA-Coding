@@ -61,7 +61,9 @@ class Pattern{
             count +=2;
             System.out.println();
         }  
+
         System.out.println("\nModel II\n");
+        
         for(i = 0 ; i < num ; i++){
             for(j = 0; j < num-i ; j++){
                 System.out.print(" ");
@@ -72,6 +74,20 @@ class Pattern{
             System.out.println();
         }
 
+    }
+    void invertedStarPyramid(int num){
+        int k = num * 2-1 , i = 1 , j = 1;
+        for(i = 0 ; i < num; i++){
+            for(j = 0 ; j <= i ; j++){
+                System.out.print(" ");
+            }
+            for(int l = 0 ; l < k ; l++ ){
+                System.out.print("*");
+            }
+            k -= 2;
+            System.out.println();
+        }
+        
     }
 
     public static void main(String [] args){
@@ -104,7 +120,9 @@ class Pattern{
         System.out.println("\nPattern - 7: Star Pyramid");
         obj.starPyramid(num);
 
-        // System.out.println("_" + *5);
+        System.out.println("\nPattern - 8: Inverted Star Pyramid");
+        obj.invertedStarPyramid(num);
+
 
     }
 }
