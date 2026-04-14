@@ -1,3 +1,5 @@
+10. Delete an element from a specific position.
+
 class DeleteAtPos{
     public static void main(String [] args){
         int pos = 2;
